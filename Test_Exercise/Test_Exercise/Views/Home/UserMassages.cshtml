@@ -1,0 +1,18 @@
+﻿@model List<Massage>
+@{
+    ViewData["Title"] = "User Massages";
+}
+<h2 class="text-black text-primary" style="text-align:center;">User Massages</h2>
+<div class="container-of-massages">
+    <strong><div class="block-of-massage">ID</div></strong>
+    <strong><div class="block-of-massage">Text</div></strong>
+    <strong><div class="block-of-massage">Time</div></strong>
+    <strong><div class="block-of-massage">UserID</div></strong>
+    @foreach (var item in Model)
+    {
+        <div class="block-of-massage">@item.Id</div>
+        <div class="block-of-massage">@item.Text</div>
+        <div class="block-of-massage">@item.Time</div>
+        <div class="block-of-massage">@item.UserID</div>
+    }
+</div>

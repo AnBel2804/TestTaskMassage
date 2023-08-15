@@ -1,0 +1,22 @@
+﻿@model Massage
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center card-align"><div></div>
+    <form asp-action="Index" method="post">
+        <div class="card border-light mb-3 border p-3 mt-4" style="width:580px">
+            <div class="row pb-2 text-center">
+                <h2 class="text-black text-primary">Create a new message</h2>
+            </div>
+            <hr style="color:black" />
+            <div class="mb-3" style="width:550px">
+                <input asp-for="Text" class="form-control " />
+            </div>
+            <div style="width:550px; text-align:center;">
+                <button type="submit" class="btn btn-primary" style="width:95%; text-align:center;">Create</button>
+            </div>
+        </div>
+    </form><div></div>
+</div>
+
